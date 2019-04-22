@@ -1,0 +1,97 @@
+/* miniprogram/pages/vote/vote.wxss */
+
+page {
+  padding-top: 200rpx;
+  background: #f6f6f6;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.voteitem{
+  margin-top: 40rpx;
+  margin: 30rpx auto;
+  height: 140rpx;
+  line-height:140rpx;
+  width: 150%;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.voteitem-img {
+  width: 125rpx;
+  height: 125rpx;
+  border-radius: 50%;
+  border:5rpx #f6f6f6 solid;
+  background-size: cover;
+  background-color: white;   
+  box-sizing: border-box;
+  box-shadow: rgba(251, 251, 251, 0.8) 0px 0px 10px inset,
+              rgba(0, 0, 0, 0.3) 0px 0px 12px;
+}
+.mv-area{
+  margin-left:30rpx;
+  height: 130rpx; 
+  width: 150%; 
+  background: transparent;
+}
+.mv-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  height: 130rpx;
+  width: 700rpx; 
+  background: transparent;
+}
+
+.bignum{
+  margin-top:0rpx;
+  font-size:220rpx;
+  font-weight:100;
+  font-style:italic;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#f1_container {
+  position: relative;
+  margin: 0 auto;
+  width: 700rpx;
+  height: 130rpx;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.f1_card_hover {
+  transform: rotateX(180deg);
+  /* box-shadow: -5px 5px 5px #aaa; */
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateX(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}

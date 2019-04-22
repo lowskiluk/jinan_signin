@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logo_c">
+    <image
+          class="logo"
+          mode="aspectFit"
+          src="https://7778-wxmini-9b3f96-1254279958.tcb.qcloud.la/logo-c.png?sign=1058d3e9df32dde0938c33f8e40715e6&t=1547471000"
+        ></image>
+  </view>
+  
+  <view class="success-v">
+  <button class="success-logo">✓</button>
+  <view class="success-textgroup">
+    <label class="success-label">签到成功</label>
+    <label class="success-label">{{signinno}}</label>
+  </view>
+</view>
+
+</view>
+

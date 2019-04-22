@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="voteitem">
+  
+  <movable-area class="mv-area">
+    <movable-view
+      class="mv-view"
+      x="{{x}}"
+      y="{{y}}"
+      direction="horizontal"
+      out-of-bounds="true"
+    ><label class="bignum"><text decode="{{true}}">&nbsp;1</text></label>
+     <image
+          class="voteitem-img"
+          mode="aspectFit"
+          src="https://7778-wxmini-9b3f96-1254279958.tcb.qcloud.la/logo-c.png?sign=1058d3e9df32dde0938c33f8e40715e6&t=1547471000"
+        ></image></movable-view>
+  </movable-area>
+   
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;2</text></label>
+    <view id="f1_container">
+      <view id="f1_card" class="shadow" hover-class="f1_card_hover">
+        <view class="front face">
+          <img src="/images/Windows%20Logo.jpg"/>
+        </view>
+        <view class="back face center">
+          <p>This is nice</p>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;3</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;4</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;5</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;6</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;7</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;8</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">&nbsp;9</text></label>
+  </view>
+  <view class="voteitem">
+    <label class="bignum"><text decode="{{true}}">10</text></label>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logo_c">
+    <image
+          class="logo"
+          mode="aspectFit"
+          src="https://7778-wxmini-9b3f96-1254279958.tcb.qcloud.la/logo-c.png?sign=1058d3e9df32dde0938c33f8e40715e6&t=1547471000"
+        ></image>
+  </view>
+  <!-- 用户 openid -->
+  <view class="userinfo" wx:if="{{showInitPage}}">
+    <!-- <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button> -->
+    <view>
+      <input id="realname" class="realname {{status==0 ? 'realname-blur':'realname-focus'}}" placeholder-class="realname-ph" type="text" focus="{{focusflag}}" bindfocus="focus"  bindblur='blur' placeholder="姓名" bindinput="inputeidt">{{realname}}</input>
+    </view>
+  </view>
+
+  <view class="radio-v" wx:if="{{showInitPage}}">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio-label" wx:for="{{items}}">
+        <radio color="#31d4c3" value="{{item.value}}" checked="{{item.checked}}">{{item.value}}</radio>
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="signin" wx:if="{{showInitPage}}">
+    <label class='signin_label'>
+      <button id="button" class="signin_button" disabled="{{isClicked}}" wx:if="{{!hasUserInfo && canIUse}}"  open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">签到</button>
+    </label>
+  </view>
+
+  <!-- 上传图片 -->
+  <!-- <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view> -->
+
+
+  <!-- 操作数据库 -->
+  <!-- <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view> -->
+
+  <!-- 新建云函数 -->
+  <!-- <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view> -->
+
+</view>
+
+<view class="success-v" wx:if="{{showSuccessIcon}}">
+  <button class="success-logo">✓</button>
+  <view id="success_button" class="success-textgroup">
+    <label id="signinsuccess" class="success-label">签到成功</label>
+    <label id="success-realname" class="success-label">您好，{{realname_d}}<label class="success-status">{{status_d}}</label></label>
+    <label class="success-label">识别编号:{{signinno}}</label>
+    <label class="success-label">签到时间:{{signtime}}</label>
+  </view>
+</view>
