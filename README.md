@@ -1,7 +1,7 @@
 # jinan_signin
 JiNan MBA annual meeting e-signin WeChat miniprogram.
 
-![image](https://github.com/lowskiluk/jinan_signin/blob/master/miniprogram/images/ScreenShot_sample.jpeg?raw=true)
+<img src="https://github.com/lowskiluk/jinan_signin/blob/master/miniprogram/images/ScreenShot_sample.jpeg" width="375px" alt="img"/>
 
 2019/1/20  
 v1.0.6 修修补补版  
