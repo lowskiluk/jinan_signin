@@ -1,6 +1,8 @@
 # jinan_signin
 JiNan MBA annual meeting e-signin WeChat miniprogram.
 
+![image](https://github.com/lowskiluk/jinan_signin/blob/master/miniprogram/images/ScreenShot_sample.jpeg?raw=true)
+
 2019/1/20  
 v1.0.6 修修补补版  
 修复了签到按钮可以重复按的bug，以很快的速度重复按会往数据库插入多条数据，现在改成点击之后就把按钮的disabled标志置为true，防止多次点击，在按钮事件结束之后再将该标志置为false（防止特殊情况需要再次点击签到）。
